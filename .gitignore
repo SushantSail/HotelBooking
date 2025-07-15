@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# dotenv environment variables (if used)
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore the database dump or uploads
+dump/
+uploads/
+
+# IDE settings (VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+
+# Build or coverage directories (if using testing/build tools)
+dist/
+coverage/
+
+# Misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

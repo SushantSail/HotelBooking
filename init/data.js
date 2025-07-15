@@ -307,6 +307,7 @@ const sampleListings = [
     rating: 4.7
   }
 ];
+<<<<<<< HEAD
 
 
 
@@ -575,6 +576,8 @@ const sampleListings = [
 //       country: "Costa Rica",
 //     },
 //   ];
+=======
+>>>>>>> d1d732f (Initial clean commit with .gitignore)
   
   module.exports = { data: sampleListings };
 

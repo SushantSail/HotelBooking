@@ -21,8 +21,3 @@ const initDB = async () => {
 }
 
 initDB();
-
-
-//my predefined data in data.js is being inserted into the database, but only when i run index.js.
-//node index.js This connects to MongoDB, deletes all existing listings, and re-inserts my sample listings.
-

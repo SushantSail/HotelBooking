@@ -4,17 +4,18 @@
   "description": "Designed multiple section layout where allow user to get all Listings page (displays all hotels from MongoDB) and Add Listings Page (allows users to submit new listings). Enabled CRUD operations (Create, Read, Update, Delete) so users can add, edit and manage hotel listings.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
     "ejs-mate": "^4.0.0",
     "express": "^4.21.1",
     "method-override": "^3.0.0",
     "mongoose": "^8.8.3"
-  },
-  "devDependencies": {}
+  }
 }

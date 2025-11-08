@@ -1,62 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to Wanderlust</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust | Discover the Night</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 60px 40px;
-      border-radius: 15px;
-    }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-    }
+      body {
+        font-family: 'Poppins', sans-serif;
+        height: 100vh;
+        background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=80')
+          no-repeat center center/cover;
+        background-attachment: fixed;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
+      .overlay {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 60px 50px;
+        border-radius: 20px;
+        text-align: center;
+        backdrop-filter: blur(6px);
+        animation: fadeIn 1.8s ease forwards;
+        max-width: 700px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      }
 
-    .explore-btn {
-      padding: 15px 30px;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 25px;
-      background-color: #ff6f61;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-    }
+      h1 {
+        font-size: 3.2rem;
+        margin-bottom: 15px;
+        color: #ff6f61;
+        letter-spacing: 1px;
+      }
 
-    .explore-btn:hover {
-      background-color: #ff3d2e;
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <h1>Welcome to Wanderlust</h1>
-    <p>Discover your next stay in beautiful homes around the world.</p>
-    <a href="/listings" class="explore-btn">Explore Listings</a>
-  </div>
-</body>
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #dcdcdc;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        animation: slideUp 2s ease 0.5s forwards;
+        opacity: 0;
+      }
+
+      .quote {
+        font-style: italic;
+        margin-bottom: 40px;
+        font-size: 1rem;
+        color: #bcbcbc;
+        animation: fadeIn 3s ease 1s forwards;
+        opacity: 0;
+      }
+
+      .explore-btn {
+        display: inline-block;
+        padding: 15px 35px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: white;
+        background: linear-gradient(135deg, #ff6f61, #c13a2e);
+        border: none;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 25px rgba(255, 111, 97, 0.6);
+        animation: pulse 2.5s infinite;
+      }
+
+      .explore-btn:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 35px rgba(255, 111, 97, 0.9);
+      }
+
+      /* --- Animations --- */
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes slideUp {
+        from { transform: translateY(50px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+
+      @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(255,111,97,0.6); }
+        70% { box-shadow: 0 0 0 20px rgba(255,111,97,0); }
+        100% { box-shadow: 0 0 0 0 rgba(255,111,97,0); }
+      }
+
+      @media (max-width: 768px) {
+        h1 { font-size: 2.4rem; }
+        h2 { font-size: 1rem; }
+        .overlay { padding: 40px 25px; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overlay">
+      <h1>Wanderlust Nights</h1>
+      <h2>Where every destination tells a story — discover places that never sleep.</h2>
+      <p class="quote">“The world is full of beautiful places. Let your heart be one of them.”</p>
+      <a href="/listings" class="explore-btn">Explore Now</a>
+    </div>
+  </body>
 </html>

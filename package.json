@@ -1,11 +1,7 @@
 {
   "name": "majorproject",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "",
-=======
   "description": "Designed multiple section layout where allow user to get all Listings page (displays all hotels from MongoDB) and Add Listings Page (allows users to submit new listings). Enabled CRUD operations (Create, Read, Update, Delete) so users can add, edit and manage hotel listings.",
->>>>>>> d1d732f (Initial clean commit with .gitignore)
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,10 +15,6 @@
     "express": "^4.21.1",
     "method-override": "^3.0.0",
     "mongoose": "^8.8.3"
-<<<<<<< HEAD
-  }
-=======
   },
   "devDependencies": {}
->>>>>>> d1d732f (Initial clean commit with .gitignore)
 }
